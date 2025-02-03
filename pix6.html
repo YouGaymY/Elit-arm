@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pagamento via Pix</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <!-- Container principal -->
+    <div class="checkout-container">
+        <h2>Finalizar Compra</h2>
+
+        <!-- Resumo do pedido -->
+        <div class="order-summary">
+            <h3>Resumo do Pedido</h3>
+            <p><strong>Produto:</strong> Arma Legalizada</p>
+            <p><strong>Valor:</strong> R$ 99,99</p>
+        </div>
+
+        <!-- QR Code -->
+        <div class="qr-code-container">
+            <img src="https://i.ibb.co/xyNyng6/IMG-20250203-WA0141.jpg" alt="QR Code Pix" class="qr-code">
+        </div>
+
+        <!-- Chave Pix -->
+        <!-- Chave Pix -->
+<div class="pix-key-container">
+    <p><strong>Chave Pix:</strong></p>
+    <p class="pix-key" id="pix-key">00020126580014BR.GOV.BCB.PIX013614353170-f671-4001-afb6-8e7ba002cf03520400005303986540599.995802BR5923FABIO CONTENTE CARNEIRO6006Macapa62070503***630402DF</p>
+    <button id="copy-pix-btn" onclick="copyPixKey()">Copiar Chave Pix</button>
+</div>
+
+        <!-- Instrução de pagamento -->
+        <div class="payment-instructions">
+            <p>Faça o pagamento via Pix utilizando o QR Code ou a chave Pix acima. Após o pagamento, confirme a transação para finalizar a compra.</p>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

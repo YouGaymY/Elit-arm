@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preencher Endereço</title>
+    <link rel="stylesheet" href="pag1.css">
+</head>
+<body>
+    <!-- Botão de voltar -->
+    <button id="back-btn" onclick="window.location.href='carrinho.html'">Voltar</button>
+
+    <!-- Formulário de preenchimento de endereço -->
+    <div class="container">
+        <h2>Preencha os dados de entrega</h2>
+        <form id="address-form">
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" name="estado" required>
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" maxlength="8" pattern="\d{8}" required>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="numero">Número</label>
+            <input type="text" id="numero" name="numero" maxlength="4" pattern="\d{1,4}" required>
+
+            <label for="como-conheceu">Como você conheceu nossa loja?</label>
+            <input type="text" id="como-conheceu" name="como-conheceu" required>
+
+            <button type="submit" id="confirm-btn" disabled>Confirmar</button>
+        </form>
+    </div>
+
+    <script src="pag1.js"></script>
+</body>
+</html>

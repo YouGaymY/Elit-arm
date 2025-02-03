@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação do Pedido</title>
+    <link rel="stylesheet" href="pag2.css">
+</head>
+<body>
+
+    <!-- Botão de voltar -->
+    <button id="back-btn" onclick="window.location.href='pag1.html'">Voltar</button>
+
+    <!-- Container principal -->
+    <div class="container">
+        <h2>Confirmação de Pedido</h2>
+
+        <!-- Informações do pedido -->
+        <div class="info">
+            <p>Cliente, seu código de pedido é <strong>#pedido282</strong></p>
+        </div>
+
+        <!-- Formulário de captura de valor do produto -->
+        <form id="payment-form">
+            <label for="valor">Qual o valor do seu produto?</label>
+            <input type="text" id="valor" name="valor" placeholder="Digite o valor do produto (Ex: 59,99)" required>
+
+            <!-- Captcha -->
+            <div class="captcha-container">
+                <span class="captcha" id="captcha-code">#383882</span>
+            </div>
+
+            <!-- Botão de confirmação -->
+            <button type="submit" id="confirm-btn" disabled>Confirmar</button>
+        </form>
+
+        <!-- Mensagem de erro (caso necessário) -->
+        <div class="error-message" id="error-message"></div>
+    </div>
+
+    <script src="pag2.js"></script>
+</body>
+</html>

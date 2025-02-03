@@ -1,0 +1,233 @@
+/* Estilos gerais da página de carrinho */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Container do carrinho */
+#cart-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: white;
+}
+
+/* Itens do carrinho */
+#cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização de cada item do carrinho */
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.cart-item:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem do produto */
+.cart-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Nome do produto */
+.cart-item-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Preço do produto */
+.cart-item-price {
+    color: #4caf50;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Quadrado de seleção de produto */
+.select-item {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 3px; /* Borda arredondada de 3px */
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* Quando o produto está selecionado */
+.select-item.selected {
+    background-color: #ffeb3b; /* Amarelo quando selecionado */
+    border: 2px solid #ffeb3b;
+}
+
+/* Botão de remover produto */
+.remove-btn {
+    padding: 8px 16px;
+    background-color: #f44336; /* Vermelho */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Total do carrinho */
+#cart-total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botão de continuar */
+#continue-container {
+    margin-top: 20px;
+    text-align: center;
+    display: none; /* Só aparece quando um produto for selecionado */
+}
+
+#continue-container a button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ffeb3b;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#continue-container a button:hover {
+    background-color: #fdd835;
+}
+
+.cart-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.cart-item-header {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.select-item {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    cursor: pointer;
+    background: white;
+    transition: 0.3s;
+}
+
+.select-item.selected {
+    background-color: red;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white; /* Alterado para branco */
+}
+
+/* Estilo para o contêiner de produtos no carrinho */
+#cart-container {
+    padding: 20px;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+#cart-total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo para o botão de continuar */
+#continue-container {
+    text-align: center;
+}
+
+#continue-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#continue-btn button:hover {
+    background-color: #2980b9;
+}

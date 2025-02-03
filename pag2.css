@@ -1,0 +1,115 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/* Botão de voltar */
+#back-btn {
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#back-btn:hover {
+    background-color: #333;
+}
+
+/* Informações do pedido */
+.info {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+/* Estilização do campo de entrada */
+input {
+    width: 93%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+/* Mensagem de instrução */
+.info-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Captcha */
+.captcha-container {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Botão de confirmação */
+#confirm-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#confirm-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#confirm-btn:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

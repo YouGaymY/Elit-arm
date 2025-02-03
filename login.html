@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cadastro</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Container de login -->
+    <div class="login-container">
+        <h2>Cadastro</h2>
+
+        <!-- Formulário de login -->
+        <form id="login-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+
+            <label for="purchase">Já comprou com nossa empresa?</label>
+            <select id="purchase" name="purchase" required>
+                <option value="">Selecione uma opção</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <button type="submit" id="submit-btn">Confirmar</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
